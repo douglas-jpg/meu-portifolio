@@ -13,7 +13,6 @@ body{
 }
 
 
-
 nav{
     position: fixed;
     display: flex;
@@ -25,7 +24,7 @@ nav{
 }
 
 .link-nav{
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-right: 3%;
     text-decoration: none;
 }
@@ -39,57 +38,60 @@ nav{
     display: flex;
     height: 97vh;
     padding-top: 7vh;
-    
 }
-#text{
+
+#text, #image{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+#text{
     margin: 30px;
     width: 60vw;
     font-size: 3em;
     line-height: 1.3em;
 }
 
-#text h2{
-    margin-top: 30px;
-    font-size: 2.2rem;
-}
-
-#name{
-    
-    border-radius: 10px;
+mark{
     background-color: var(--green);
+    border-radius: 5px;
+}
+
+#text h2{
+    font-size: 0.7em;
+    margin-left: -70px;
+}
+
+#home button {
+    transition: all .5s ease;
+    color: var(--white);
+    border: 3px solid var(--white);
+    font-family: 'Roboto Slab', serif;
+    line-height: 1;
+    font-size: 0.6em;
+    background-color : transparent;
+    margin: 10vh 0 0 -10vw;
+    width: 300px;
+    height: 75px;
+    border-radius: 15px;
+}
+#home button:hover {
     color: var(--black);
+    background-color: var(--green);
+    border: 3px solid var(--black);
 }
 
-#image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30vw;
-}
-
-#picture{
+#image img{
+    position:absolute;
     border-radius: 100%;
     border: 3px dashed var(--green) ;
     height: 400px;
     width: 400px;
 }
 
-#home button{
-    font-family: 'Roboto Slab', serif;
-    font-size: 0.6em;
-    margin-top: 10vh;
-    width: 300px;
-    height: 75px; 
-    border-radius: 20px;
-    border: 3px solid var(--black);
-    background-color: var(--green);
-}
-
-#home button:hover{
-    cursor: pointer;
-}
 
 .info{
     display: flex;
